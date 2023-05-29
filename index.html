@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bipolar Mood Tracker</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Bipolar Mood Tracker</h1>
+
+  <form id="moodForm">
+    <label for="dateInput">Date:</label>
+    <input type="date" id="dateInput">
+    <br>
+    <label for="moodInput">Mood:</label>
+    <select id="moodInput">
+      <option value="happy">Happy</option>
+      <option value="sad">Sad</option>
+      <option value="energetic">Energetic</option>
+      <option value="irritable">Irritable</option>
+    </select>
+    <br>
+    <button type="submit">Log Mood</button>
+  </form>
+
+  <div id="moodSummary"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

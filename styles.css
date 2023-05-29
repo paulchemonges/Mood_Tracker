@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bipolar Application</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ff3366, #cc0044);
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      border-color: #ff3366;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff3366;
+      border: 1px solid #ff3366;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 3px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #cc0044;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bipolar Application</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="mood">Mood:</label>
+      <input type="text" id="mood" placeholder="Enter your mood">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
